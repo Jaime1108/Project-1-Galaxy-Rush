@@ -11,9 +11,10 @@
 - **C#** (Programming Language)  
 
 ## 🚀 How to Play  
-1. **Move the spaceship** left or right to avoid obstacles  
-2. Survive as long as possible to achieve a **high score**  
-3. React quickly—**the speed increases over time!**  
+1. **Move the spaceship** left or right to avoid obstacles
+2. Hold W for acceleration and Z, X for spinning  
+3. Survive as long as possible to achieve a **high score**  
+4. React quickly—**the speed increases over time!**  
 
 ## 🔧 Installation  
 1. Download the zip file from this repository

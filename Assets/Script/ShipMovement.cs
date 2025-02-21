@@ -13,6 +13,8 @@ public class ShipMovement : MonoBehaviour
     private bool isAlive = true;
     public float rotationSpeed = 100f; // Reduced rotation speed for better control
     public float maxTiltAngle = 25f; 
+    private float maxSpeed = 200.0f;
+    private float minSpeed = 60.0f;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -75,10 +77,15 @@ public class ShipMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        maxSpeed += Time.deltaTime * 0.5f;
+        minSpeed += Time.deltaTime * 0.5f;
         // Adjust speed based on acceleration 
-        if(speed <= 200 && isAccel == true && acceleration >=0){
+        if (speed < minSpeed){
+            speed = minSpeed;
+        }
+        if(isAccel == true && acceleration >=0){
             speed += acceleration * Time.deltaTime;} 
-        else if (speed >= 60 && acceleration <=0 && isAccel == false){
+        else if (speed >= minSpeed && acceleration <=0 && isAccel == false){
             speed += acceleration * Time.deltaTime;
         }
         horizontalInput = Input.GetAxis("Horizontal");

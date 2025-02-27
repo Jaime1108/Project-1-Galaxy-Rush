@@ -8,7 +8,8 @@
 
 ## 🛠 Built With  
 - **Unity** (Game Engine)  
-- **C#** (Programming Language)  
+- **C#** (Programming Language)
+- **Blender** (3D model creation)  
 
 ## 🚀 How to Play  
 1. **Move the spaceship** left or right to avoid obstacles
